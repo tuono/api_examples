@@ -8,8 +8,8 @@ You will need an account with Tuono in order to use this utility. You can
 use your Tuono username and password to login, or you can pass in a JWT you already
 have (maybe from an active browser session).
 
-The username and password can be gotten from the environment variables TUONO_USERNAME
-and TUONO_PASSWORD, respectively.  Alternatively, the script will prompt you
+The username and password can be gotten from the environment variables PORTAL_USERNAME
+and PORTAL_PASSWORD, respectively.  Alternatively, the script will prompt you
 for your username and password if they are not otherwise provided.  It is
 recommended that you do not use the command option --password so that your
 password is not stored in your command history in plan text.
