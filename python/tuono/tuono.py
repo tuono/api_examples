@@ -29,14 +29,14 @@ class Tuono(object):
                              for you.
 
     Attributes:
-        api_base:    The base_url to the Tuono API.  Default: https://portal.tuono.io/api.v1
+        api_base:    The base_url to the Tuono API.  Default: https://portal.tuono.io/api/v1
         password:    The password for the Tuono user.  Only required if token is not provided.
         token:       The user's JWT token for the Tuono API.  The result of a previous login.  Not needed if
                      username and password are provided.
         username:    The user to login as.  Only required if the token is not provided.
 
     """
-    def __init__(self, username=None, password=None, token=None, api_base="https://portal.tuono.io/api.v1"):
+    def __init__(self, username=None, password=None, token=None, api_base="https://portal.tuono.io/api/v1"):
         self.api_base = api_base
 
         if token is None:
