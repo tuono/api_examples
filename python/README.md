@@ -17,8 +17,8 @@ password is not stored in your command history in plan text.
 # To run the example code
 ```ignorelang
 #> python3 client.py --help
-usage: client.py [-h] [--apply_environment APPLY_ENVIRONMENT] [--destroy_environment DESTROY_ENVIRONMENT] [--environment {local,prod,stage}] [--job_status JOB_STATUS] [--list_environments] [--password PASSWORD]
-                 [--preview_environment PREVIEW_ENVIRONMENT] [--print_token] [--token TOKEN] [--username USERNAME]
+usage: client.py [-h] [--apply_environment APPLY_ENVIRONMENT] [--destroy_environment DESTROY_ENVIRONMENT] [--job_status JOB_STATUS] [--list_environments] [--password PASSWORD]
+                 [--preview_environment PREVIEW_ENVIRONMENT] [--token TOKEN] [--username USERNAME]
 
 Tuono API example
 
@@ -28,8 +28,6 @@ optional arguments:
                         Run apply on the given environment id
   --destroy_environment DESTROY_ENVIRONMENT, -de DESTROY_ENVIRONMENT
                         Run destroy on the given environment id
-  --environment {local,prod,stage}, -e {local,prod,stage}
-                        Where you are running this script against - local, prod, stage
   --job_status JOB_STATUS, -js JOB_STATUS
                         Get the status of the specified job_id.
   --list_environments, -le
@@ -38,7 +36,6 @@ optional arguments:
                         The password to login the portal with - its better to set the PORTAL_PASSWORD env variable
   --preview_environment PREVIEW_ENVIRONMENT, -pe PREVIEW_ENVIRONMENT
                         Run preview on the given environment id
-  --print_token         Print the JWT token to stdout
   --token TOKEN         The JWT token to use in API calls to the portal.
   --username USERNAME, -u USERNAME
                         The username to login the portal with

@@ -74,12 +74,6 @@ def parse_args():
         help="Run preview on the given environment id",
     )
     parser.add_argument(
-        "--print_token",
-        action="store_true",
-        default=True,
-        help="Print the JWT token to stdout",
-    )
-    parser.add_argument(
         "--token",
         action="store",
         help="The JWT token to use in API calls to the portal.",
