@@ -124,6 +124,28 @@ class Tuono(object):
         response = requests.get(url, headers=self.headers)
         return response.json()["object"]
 
+    def get_roles(self):
+        """
+        Get a list of roles you have.
+
+        Returns:
+             A list of Roles.
+        """
+        url = f"{self.api_base}/roles"
+        response = requests.get(url, headers=self.headers)
+        return json.loads(response.json())["objects"]
+
+    def get_secrets(self):
+        """
+        Get a list of secrets visible to you.
+
+        Returns:
+             A list of Secrets.
+        """
+        url = f"{self.api_base}/secrets"
+        response = requests.get(url, headers=self.headers)
+        return response.json()["object"]
+
     def preview_environment(self, environment_id):
         """
         Preview an Environment in your cloud provider.

@@ -61,6 +61,20 @@ def parse_args():
         help="List environments in the account",
     )
     parser.add_argument(
+        "--list_roles",
+        "-lr",
+        default=False,
+        action="store_true",
+        help="List your roles",
+    )
+    parser.add_argument(
+        "--list_secrets",
+        "-ls",
+        default=False,
+        action="store_true",
+        help="List secrets available to you",
+    )
+    parser.add_argument(
         "--password",
         "-p",
         action="store",
@@ -103,6 +117,10 @@ def main(args):
 
     if args.list_environments:
         pprint.pprint(tno.get_environments())
+    elif args.list_roles:
+        pprint.pprint(tno.get_roles())
+    elif args.list_secrets:
+        pprint.pprint(tno.get_secrets())
     elif args.preview_environment:
         pprint.pprint(tno.preview_environment(args.preview_environment))
     elif args.job_status:

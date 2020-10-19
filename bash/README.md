@@ -12,7 +12,7 @@ The username and password can be gotten from the environment variables PORTAL_US
 and PORTAL_PASSWORD, respectively.  Alternatively, the script will prompt you
 for your username and password if they are not otherwise provided.  It is
 recommended that you do not use the command option --password so that your
-password is not stored in your command history in plan text.
+password is not stored in your command history in plain text.
 
 # To run the example code
 ```ignorelang
